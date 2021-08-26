@@ -1,6 +1,7 @@
 <div align="center"><h1>SweetAlert Js with Flask</h1></div>
 
 ## Usage :pushpin:
+> NB: Written for Bootstrap 5
 ### 1. As a template :pushpin:
 To use this custom alerts as a template;
 - In your templates folder create a file `"sweetalerts.html"` then copy and paste the following lines of code.
@@ -37,6 +38,56 @@ To use this custom alerts as a template;
 ```
 ### 2. Inline :pushpin:  
 ALternatively,you can just copy and paste the above code snippet inside your html file.
+
+```
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Sweet alert Js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div>
+                <!-- Begin alerts -->                
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                {% for category, message in messages %}
+                <script>
+
+                    Swal.fire({
+
+                        title:"{{ category.title() }}!",
+                        // success , error , warning ,info
+
+                        text: "{{ message }}",
+                        // Custom message flashed from your flask routes
+
+                        icon: "{{ category }}" == "danger" ? "error" : "{{ category }}"
+                        // success , error , warning ,info
+
+                    })
+
+                </script>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+
+                <!-- End alerts -->
+    </div>
+   ...
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
+```
           
 
 </br></br></br>
