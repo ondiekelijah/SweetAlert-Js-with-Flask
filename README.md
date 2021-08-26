@@ -1,5 +1,7 @@
 <div align="center"><h1>SweetAlert Js with Flask</h1></div>
 
+![](https://github.com/Dev-Elie/SweetAlert-Js-with-Flask/blob/main/static/header_image.png)
+
 ## Usage :pushpin:
 ### Points to note:
 
