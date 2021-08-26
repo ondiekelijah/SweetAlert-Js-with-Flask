@@ -17,26 +17,7 @@
             <h1 class="text-center">Sweet Alerts in Flask</h1>
             <form method="POST" action="{{ request.path }}">
 
-                <!-- Begin alerts -->                
-                {% with messages = get_flashed_messages(with_categories=true) %}
-                {% if messages %}
-                {% for category, message in messages %}
-                <script>
-
-                    Swal.fire({
-
-                        title:"{{ category }}" == "success" ? "Success!" : "Error!" ,
-                        text: "{{ message }}",
-                        icon: "{{ category }}",
-
-                    })
-
-                </script>
-                {% endfor %}
-                {% endif %}
-                {% endwith %}
-
-                <!-- End alerts -->
+                {% include "shorturl.at/fnqJ0" %}
 
                 {{ form.csrf_token }}
                 <div class="mb-3">
