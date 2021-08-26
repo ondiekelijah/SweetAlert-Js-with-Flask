@@ -15,7 +15,7 @@
 To use this custom alerts as a template;
 - In your templates folder create a file `"sweetalerts.html"` then copy and paste the following lines of code.
 
-```python
+```html
    <!-- Begin alerts -->                
    {% with messages = get_flashed_messages(with_categories=true) %}
    {% if messages %}
