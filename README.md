@@ -1,7 +1,14 @@
 <div align="center"><h1>SweetAlert Js with Flask</h1></div>
 
 ## Usage :pushpin:
-> NB: Written for Bootstrap 5
+### Points to note:
+
+   - You should be using Bootstrap 5.
+   > Find it [here](https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template)
+   - Must include a link to sweetalert2 cdn.
+   > Find it [here](https://sweetalert2.github.io/#download)
+   - In your flask routes you must be using the message flashing method.
+  
 ### 1. As a template :pushpin:
 To use this custom alerts as a template;
 - In your templates folder create a file `"sweetalerts.html"` then copy and paste the following lines of code.
@@ -37,7 +44,7 @@ To use this custom alerts as a template;
 {% include "sweetalerts.html" %}
 ```
 ### 2. Inline :pushpin:  
-ALternatively,you can just copy and paste the above code snippet inside your html file.
+Alternatively,you can just copy and paste the above code snippet inside your html file.
 
 ```html
 <!doctype html>
@@ -91,7 +98,7 @@ ALternatively,you can just copy and paste the above code snippet inside your htm
 
 </html>
 ```
-          
+        
 
 </br></br></br>
 <div align="center"><h1>Let's connect on Twitter</h1></div>
