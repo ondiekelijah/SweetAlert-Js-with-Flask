@@ -6,7 +6,7 @@
 To use this custom alerts as a template;
 - In your templates folder create a file `"sweetalerts.html"` then copy and paste the following lines of code.
 
-```html
+```python
    <!-- Begin alerts -->                
    {% with messages = get_flashed_messages(with_categories=true) %}
    {% if messages %}
@@ -39,7 +39,7 @@ To use this custom alerts as a template;
 ### 2. Inline :pushpin:  
 ALternatively,you can just copy and paste the above code snippet inside your html file.
 
-```
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -81,6 +81,9 @@ ALternatively,you can just copy and paste the above code snippet inside your htm
 
                 <!-- End alerts -->
     </div>
+    
+    {% block content%}
+    {% content %}
    ...
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
