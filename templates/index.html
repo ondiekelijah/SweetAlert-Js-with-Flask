@@ -25,9 +25,14 @@
 
                     Swal.fire({
 
-                        title:"{{ category }}" == "success" ? "Success!" : "Error!" ,
+                        title:"{{ category.title() }}!",
+                        // success , error , warning ,info
+
                         text: "{{ message }}",
-                        icon: "{{ category }}",
+                        // Custom message flashed from your flask routes
+
+                        icon: "{{ category }}" == "danger" ? "error" : "{{ category }}"
+                        // success , error , warning ,info
 
                     })
 

@@ -62,7 +62,7 @@ def index():
     
             db.session.add(user)
             db.session.commit()
-            flash(f"User Succesfully Added", "success")
+            flash(f"Record Saved!", "success")
 
             return redirect(url_for("index"))
         except InvalidRequestError:
@@ -70,7 +70,7 @@ def index():
             flash(f"Something went wrong!", "danger")
         except IntegrityError:
             db.session.rollback()
-            flash(f"User already exists!.", "warning")
+            flash(f"Record already exists!.", "warning")
         except DataError:
             db.session.rollback()
             flash(f"Invalid Entry", "warning")
