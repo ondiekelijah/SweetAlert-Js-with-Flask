@@ -3,7 +3,7 @@
 ## Usage :pushpin:
 ### 1. As a template :pushpin:
 To use this custom alerts as a template;
-In your templates folder create a file "sweetalerts.html" then copy and paste the following lines of code.
+- In your templates folder create a file "sweetalerts.html" then copy and paste the following lines of code.
 
 ```html
    <!-- Begin alerts -->                
@@ -30,6 +30,11 @@ In your templates folder create a file "sweetalerts.html" then copy and paste th
    {% endwith %}
 
    <!-- End alerts -->
+```
+- Then import the template in your html file as follows.
+```
+   {% include "sweetalerts.html" %}
+
 ```
 ### 2. Inline :pushpin:  
           
