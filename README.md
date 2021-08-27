@@ -110,7 +110,7 @@ Success             |  Information
 :-------------------------:|:-------------------------:
 ![Sample](https://github.com/Dev-Elie/SweetAlert-Js-with-Flask/blob/main/static/success.png)  |  ![Sample](https://github.com/Dev-Elie/SweetAlert-Js-with-Flask/blob/main/static/info.png)
 
-Warning             |  Danger
+Danger           |  Warning
 :-------------------------:|:-------------------------:
 ![Sample](https://github.com/Dev-Elie/SweetAlert-Js-with-Flask/blob/main/static/danger.png)  |  ![Sample](https://github.com/Dev-Elie/SweetAlert-Js-with-Flask/blob/main/static/warning.png)
 
