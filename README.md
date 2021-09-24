@@ -20,7 +20,8 @@ To use this custom alerts as a template;
    {% with messages = get_flashed_messages(with_categories=true) %}
    {% if messages %}
    {% for category, message in messages %}
-   
+   <script>
+      
    Swal.fire({
 
           title:"{{ category.title() }}!",
